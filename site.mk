@@ -9,6 +9,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
 	gluon-config-mode-core \
+	gluon-config-mode-supernode \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-luci-admin \
@@ -17,6 +18,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
 	gluon-luci-mesh-vpn-fastd \
+	gluon-fastd-tunneling-mtu-workaround \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
@@ -27,11 +29,11 @@ GLUON_SITE_PACKAGES := \
 	haveged
 
 
-DEFAULT_GLUON_RELEASE := 0.6.7+beta$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.7.0+experimental$(shell date '+%Y%m%d')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
-GLUON_PRIORITY ?= 1
+GLUON_PRIORITY ?= 3
 
 GLUON_LANGS ?= en de
