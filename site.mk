@@ -9,7 +9,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
 	gluon-config-mode-core \
-	gluon-config-mode-supernode \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-client-bridge \
@@ -29,6 +28,8 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	haveged
 
+	#disabled because it's broken anyway and does only confuse people if present but broken
+	#gluon-config-mode-supernode \
 
 DEFAULT_GLUON_RELEASE := 0.7.0+experimental$(shell date '+%Y%m%d')
 
