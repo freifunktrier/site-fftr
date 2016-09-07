@@ -1,10 +1,12 @@
-From 38542d853cd1a6b98af344027e9ac0f2a599958b Mon Sep 17 00:00:00 2001
+From 97a56484a819ff77cc16b80c3ca03de6bdef439c Mon Sep 17 00:00:00 2001
 From: Ranlvor <ranlvor@starletp9.de>
 Date: Wed, 7 Sep 2016 21:46:43 +0200
-Subject: [PATCH] blue is the new pink
+Subject: [PATCH 1/2] configmode: blue is the new pink
 
 -: #dc0067;
 +: #0000ff;
+
+Change the pink in the configmode to blue
 
 Cause our commuity traditionally does not like the pink color
 ---
