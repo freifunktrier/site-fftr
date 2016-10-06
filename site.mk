@@ -31,7 +31,7 @@ GLUON_SITE_PACKAGES := \
 	#disabled because it's broken anyway and does only confuse people if present but broken
 	#gluon-config-mode-supernode \
 
-DEFAULT_GLUON_RELEASE := 0.7.0+experimental$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.8.4+experimental$(shell date '+%Y%m%d')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
@@ -39,4 +39,4 @@ GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 GLUON_PRIORITY ?= 3
 
 GLUON_LANGS ?= en de
-GLUON_REGION = eu
+GLUON_REGION ?= eu
