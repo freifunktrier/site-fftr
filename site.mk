@@ -26,7 +26,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	iwinfo \
 	iptables \
-	haveged
+	haveged \
+	kmod-igb
 
 	#disabled because it's broken anyway and does only confuse people if present but broken
 	#gluon-config-mode-supernode \
