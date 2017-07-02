@@ -10,4 +10,4 @@ install:
   - sudo luarocks install lua-cjson
 
 script:
-  - bash tests/validate_site.sh
+  - bash check/validate_site.sh
