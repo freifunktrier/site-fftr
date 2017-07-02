@@ -11,3 +11,5 @@ install:
 
 script:
   - bash tests/validate_site.sh
+
+#dummy
