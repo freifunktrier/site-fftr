@@ -18,7 +18,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
 	gluon-luci-mesh-vpn-fastd \
-	gluon-fastd-tunneling-mtu-workaround \
+	# gluon-fastd-tunneling-mtu-workaround \
+	# not sure but think it's obsolete
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
@@ -31,7 +32,7 @@ GLUON_SITE_PACKAGES := \
 	#disabled because it's broken anyway and does only confuse people if present but broken
 	#gluon-config-mode-supernode \
 
-DEFAULT_GLUON_RELEASE := 0.8.4+experimental$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.9.0+experimental$(shell date '+%Y%m%d')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
