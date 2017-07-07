@@ -28,7 +28,7 @@ msgstr ""
 "public key (<em><%=pubkey%></em>) to <a href=\"mailto:trier-keys@freifunk.net?"
 "subject=Registration:%20<%=hostname%>&amp;body=%23%20<%=hostname%>%0A"
 "%23%20<%=sysconfig.primary_mac%>%0Akey%20%22<%=pubkey%>%22%3B"
-"\">trier@freifunk.net</a>."
+"\">trier-keys@freifunk.net</a>."
 
 msgid "gluon-config-mode:reboot"
 msgstr ""
