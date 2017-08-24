@@ -33,10 +33,12 @@ GLUON_SITE_PACKAGES := \
 	# not sure but think it's obsolete
 	# gluon-fastd-tunneling-mtu-workaround \
 
-DEFAULT_GLUON_RELEASE := 0.9.0+experimental$(shell date '+%Y%m%d')
-
+DEFAULT_GLUON_RELEASE := $(shell date '+%Y%m%d')_exp
+# DEFAULT_GLUON_RELEASE := 0.9.0+tackin
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
+
+GLUON_BRANCH ?= stable
 
 GLUON_PRIORITY ?= 3
 
