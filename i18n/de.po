@@ -32,7 +32,6 @@ msgstr ""
 "Schlüssel (<em>key=<%=pubkey%></em>) und den Namen deines Knotens "
 "(<em><%=pcdata(hostname)%></em>) an "
 "<a href=\"mailto:trier-keys@freifunk.net?subject=Anmeldung:%20<%=pcdata(hostname)%>&amp;"
-
 "body=urlencode('# ' .. hostname .. '\n' .. pubkey) %>\">trier-keys@freifunk.net</a>."
 "</p>"
 "<div class=\"the-key\">"
