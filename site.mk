@@ -39,4 +39,7 @@ GLUON_PRIORITY ?= 2
 
 GLUON_LANGS ?= en de
 GLUON_REGION ?= eu
-GLUON_ATH10K_MESH ?= ibss
+# GLUON_ATH10K_MESH ?= ibss
+
+GLUON_WLAN_MESH = ibss
+# If not set "11s" will be default
