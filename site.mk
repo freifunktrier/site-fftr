@@ -30,14 +30,16 @@ GLUON_MULTIDOMAIN=1
 GLUON_SITE_PACKAGES := haveged iwinfo
 
 	#disabled because it's broken anyway and does only confuse people if present but broken
-        # gluon-alfred \
+	# gluon-alfred \
 	# gluon-config-mode-supernode \
 	# not sure but think it's obsolete
 	# gluon-fastd-tunneling-mtu-workaround \
 
 
 
-DEFAULT_GLUON_RELEASE := 0.11.+exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.11.$(shell date '+%Y%m%d')+tackin
+# Just to name my testing-environments
+
 # DEFAULT_GLUON_RELEASE := 0.11.1
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
