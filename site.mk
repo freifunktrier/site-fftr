@@ -12,6 +12,7 @@ GLUON_FEATURES := \
 	mesh-vpn-fastd \
 	radvd \
 	respondd \
+	scheduled-domain-switch \
 	status-page \
 	web-advanced \
 	web-private-wifi \
