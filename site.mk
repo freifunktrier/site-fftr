@@ -7,7 +7,6 @@ GLUON_FEATURES := \
 	autoupdater \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
-	ebtables-limit-arp \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	radvd \
@@ -16,7 +15,8 @@ GLUON_FEATURES := \
 	web-advanced \
 	web-private-wifi \
 	web-wizard
-
+	
+#	ebtables-limit-arp \  # enabled by default since 2018.2.1
 # 	scheduled-domain-switch \
 
 ##	GLUON_MULTIDOMAIN
