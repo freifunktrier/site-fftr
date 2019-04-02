@@ -12,11 +12,12 @@ GLUON_FEATURES := \
 	mesh-vpn-fastd \
 	radvd \
 	respondd \
-	scheduled-domain-switch \
 	status-page \
 	web-advanced \
 	web-private-wifi \
 	web-wizard
+
+# 	scheduled-domain-switch \
 
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
