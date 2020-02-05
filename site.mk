@@ -9,7 +9,6 @@ GLUON_FEATURES := \
 	ebtables-filter-ra-dhcp \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
-	radvd \
 	respondd \
 	status-page \
 	web-advanced \
@@ -18,6 +17,9 @@ GLUON_FEATURES := \
 	
 #	ebtables-limit-arp \  # enabled by default since 2018.2.1
 # 	scheduled-domain-switch \
+
+# Build both sysupgrade and factory images for deprecated devices.
+GLUON_DEPRECATED=full
 
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
@@ -39,10 +41,10 @@ GLUON_SITE_PACKAGES := haveged iwinfo
 
 
 
-DEFAULT_GLUON_RELEASE := 0.11.$(shell date '+%Y%m%d')+tackin
+DEFAULT_GLUON_RELEASE := 0.12.$(shell date '+%Y%m%d')+tackin
 # Just to name my testing-environments
 
-# DEFAULT_GLUON_RELEASE := 0.11.1
+# DEFAULT_GLUON_RELEASE := 0.12.1
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
@@ -52,7 +54,3 @@ GLUON_PRIORITY ?= 2
 
 GLUON_LANGS ?= en de
 GLUON_REGION ?= eu
-# GLUON_ATH10K_MESH ?= ibss # old!
-
-# GLUON_WLAN_MESH = ibss
-# If not set "11s" will be default
