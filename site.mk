@@ -41,7 +41,7 @@ GLUON_SITE_PACKAGES := haveged iwinfo
 
 
 
-DEFAULT_GLUON_RELEASE := 0.13.0.$(shell date '+%Y%m%d')+tackin
+DEFAULT_GLUON_RELEASE := 0.14.0.$(shell date '+%Y%m%d')+tackin
 # Just to name my testing-environments
 
 # DEFAULT_GLUON_RELEASE := 0.12.1
