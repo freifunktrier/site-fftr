@@ -5,6 +5,7 @@
 
 GLUON_FEATURES := \
 	autoupdater \
+	config-mode-outdoor \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
 	mesh-batman-adv-15 \
@@ -25,6 +26,8 @@ GLUON_DEPRECATED=full
 #		Build gluon with multidomain support.
 GLUON_MULTIDOMAIN=1
 
+GLUON_FEATURES_standard := wireless-encryption-wpa3
+
 	
 ##	GLUON_SITE_PACKAGES
 #		Specify additional Gluon/LEDE packages to include here;
@@ -33,9 +36,8 @@ GLUON_MULTIDOMAIN=1
 #		chosen feature flags
 #
 # GLUON_SITE_PACKAGES := haveged iwinfo
-GLUON_SITE_PACKAGES := iwinfo
 #  removed in gluon V2020.2.x: haveged from  GLUON_SITE_PACKAGES, as urngd is now included by default.
-
+GLUON_SITE_PACKAGES := iwinfo
 
 
 	#disabled because it's broken anyway and does only confuse people if present but broken
