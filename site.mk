@@ -31,7 +31,12 @@ GLUON_MULTIDOMAIN=1
 #		A minus sign may be prepended to remove a packages from the
 #		selection that would be enabled by default or due to the
 #		chosen feature flags
-GLUON_SITE_PACKAGES := haveged iwinfo
+#
+# GLUON_SITE_PACKAGES := haveged iwinfo
+GLUON_SITE_PACKAGES := iwinfo
+#  removed in gluon V2020.2.x: haveged from  GLUON_SITE_PACKAGES, as urngd is now included by default.
+
+
 
 	#disabled because it's broken anyway and does only confuse people if present but broken
 	# gluon-alfred \
