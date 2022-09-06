@@ -50,14 +50,14 @@ GLUON_SITE_PACKAGES := iwinfo
 
 
 
-DEFAULT_GLUON_RELEASE := 0.14.0.$(shell date '+%Y%m%d')+tackin
+DEFAULT_GLUON_RELEASE := 0.16.0.$(shell date '+%Y%m%d')+tackin
 # Just to name my testing-environments
 
-# DEFAULT_GLUON_RELEASE := 0.12.1
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
-GLUON_BRANCH ?= stable
+# GLUON_BRANCH ?= stable
+GLUON_AUTOUPDATER_BRANCH ?= stable
 
 GLUON_PRIORITY ?= 2
 
