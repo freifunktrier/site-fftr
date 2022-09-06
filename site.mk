@@ -10,12 +10,14 @@ GLUON_FEATURES := \
 	ebtables-filter-ra-dhcp \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
+	mesh-vpn-fastd-l2tp \
 	respondd \
 	status-page \
 	web-advanced \
 	web-private-wifi \
 	web-wizard
 	
+#	web-mesh-vpn-fastd \  # enable Web-optionsmenue for fastd-methodes in configmode
 #	ebtables-limit-arp \  # enabled by default since 2018.2.1
 # 	scheduled-domain-switch \
 
